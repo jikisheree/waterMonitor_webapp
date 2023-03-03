@@ -1,0 +1,13 @@
+{
+  "rules": {
+    "UsersData" : {
+      "$uid" : {
+        
+   ".read": true  ,
+    ".write": true
+      }
+      
+    }
+ 
+  }
+}
