@@ -58,13 +58,13 @@ var tmp_waterTotalArr_f2 = [];
           console.log(childData);
         if(childKey=="waterlog"){
             for(var i in childData){
-                tmp_timeStampArr.push(childData[i].timestamp);
+                tmp_timeStampArr.push(new Date(childData[i].timestamp* 1000).toLocaleString());
                 tmp_waterValueArr_f1.push(childData[i].faucet_1_value); 
                 tmp_waterValueArr_f2.push(childData[i].faucet_2_value);
                 }
         }else if (childKey=="watertotal"){
             for(var i in childData){
-                tmp_totaltimeStamp.push(childData[i].timestamp);
+                tmp_totaltimeStamp.push(new Date(childData[i].timestamp* 1000).toLocaleString());
                 tmp_waterTotalArr_f1.push(childData[i].faucet_1_total);
                 tmp_waterTotalArr_f2.push(childData[i].faucet_2_total);
             }
