@@ -22,7 +22,7 @@ var timeStampArr = [];
 var waterValueArr_f1 = [];
 var waterValueArr_f2 = [];
 
-await getData.addEventListener('click', (e) => {
+const getData = () =>{
     console.log("click");
     const dbRef = ref(db, 'UsersData/mw8hG8uvYigQpzheQilXmCpLuyG2');
     onValue(dbRef, (snapshot) => {
@@ -48,6 +48,8 @@ await getData.addEventListener('click', (e) => {
         });
 
     });
-});
+};
+
+setInterval(getData,1000);
 
 export {timeStampArr, waterValueArr_f1, waterValueArr_f2};
