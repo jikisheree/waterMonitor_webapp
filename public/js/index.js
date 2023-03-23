@@ -104,7 +104,7 @@ waterTotalArr_f2 = tmp_waterTotalArr_f2;
   total2_Element.textContent = waterTotalArr_f2;
 };
 
-setInterval(getData,10000);
+setInterval(getData,30000);
 
  
 
